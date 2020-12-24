@@ -9,8 +9,6 @@ function Hold()
     let loops=document.getElementById("loops").value;
     let lat=latlon.split(",")[0];
     let lon=latlon.split(",")[1];
-    /*
-    let params="lat="+lat+" lon="+lon+" legs="+legs+" length="+length+" loops="+loops);
+    let params="lat="+lat+" lon="+lon+" legs="+legs+" length="+length+" loops="+loops;
     document.getElementById("result").innerHTML=params;
- */
 }
