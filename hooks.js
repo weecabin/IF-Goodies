@@ -13,6 +13,6 @@ function Hold()
     let lon=latlon.split(",")[1];
     let params="lat="+lat+" lon="+lon+" legs="+legs+" length="+length+" loops="+loops;
     document.getElementById("result").innerHTML=params;
-    let xml = fp.HoldPattern(lat,lon,legs,length,loops);
+    let xml = fp.HoldPattern(legs,length,lat,lon,loops);
     document.getElementById("result").innerHTML=xml
 }
