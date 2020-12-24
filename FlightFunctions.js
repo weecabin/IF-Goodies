@@ -210,6 +210,7 @@ function DistHeading(latfrom,lonfrom,latto,lonto)
 
 function HoldPattern(legs,leglen,lat,lon,loops=10)
 {
+  window.alert("in HoldPattern")
   // turn angle at the end of each leg
   var deltaHeading = 360 / legs;
 
