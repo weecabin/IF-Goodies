@@ -40,8 +40,14 @@ var rl = readline.createInterface({
 
 function Hold()
 {
-  let docll=document.getElementById("latlon").value;
-  document.getElementById("res").innerHTML=docll;
+  let latlon=document.getElementById("latlon").value;
+  let legs=document.getElementById("legs").value;
+  let length=document.getElementById("length").value;
+  let loops=document.getElementById("loops").value;
+  let lat=latlon.split(",")[0];
+  let lon=latlon.split(",")[1];
+  let params="lat="+lat+" lon="+lon+" legs="+legs+" length="+length+" loops="+loops)
+  document.getElementById("result").innerHTML=params;
   //window.alert("in Hold");
 }
 
