@@ -1,6 +1,6 @@
 function Hold()
 {
-  window.alert("in Hold");
+  //window.alert("in Hold");
   window.document.getElementById("debug").innerHTML="Executing Hold";
   /*
   let latlon=document.getElementById("latlon").value;
