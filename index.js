@@ -41,6 +41,7 @@ var rl = readline.createInterface({
 function Hold()
 {
   window.alert("in Hold");
+  document.getElementById("debug").innerHTML="Executing Hold";
   let latlon=document.getElementById("latlon").value;
   window.alert(latlon);
   let legs=document.getElementById("legs").value;
