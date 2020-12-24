@@ -51,7 +51,6 @@ function Hold()
   let lon=latlon.split(",")[1];
   let params="lat="+lat+" lon="+lon+" legs="+legs+" length="+length+" loops="+loops);
   document.getElementById("result").innerHTML=params;
- 
 }
 
 rl.on('line', (line) => 
