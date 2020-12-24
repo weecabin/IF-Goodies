@@ -4,7 +4,7 @@ function Hold()
   try
   {
     document.getElementById("debug").innerHTML=" Executing Hold";
-  
+    return;
     let latlon=document.getElementById("latlon").value;
     window.alert(latlon);
     let legs=document.getElementById("legs").value;
