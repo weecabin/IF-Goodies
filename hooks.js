@@ -14,5 +14,5 @@ function Hold()
     let params="lat="+lat+" lon="+lon+" legs="+legs+" length="+length+" loops="+loops;
     document.getElementById("params").innerHTML=params;
     let xml = fp.HoldPattern(Number(legs),Number(length),Number(lat),Number(lon),Number(loops));
-    document.getElementById("result").innerHTML="end of Hold()";
+    document.getElementById("result").innerHTML=xml;
 }
