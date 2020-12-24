@@ -40,8 +40,9 @@ var rl = readline.createInterface({
 
 function Hold()
 {
-  let docll=document.getElementById("latlon").value
-  window.alert("in Hold");
+  let docll=document.getElementById("latlon").value;
+  document.getElementById("res").innerHTML=docll;
+  //window.alert("in Hold");
 }
 
 rl.on('line', (line) => 
