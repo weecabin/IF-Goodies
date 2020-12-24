@@ -1,3 +1,5 @@
+const fp=require("./FlightFunctions");
+
 function Hold()
 {
   //window.alert("in Hold");
@@ -11,4 +13,6 @@ function Hold()
     let lon=latlon.split(",")[1];
     let params="lat="+lat+" lon="+lon+" legs="+legs+" length="+length+" loops="+loops;
     document.getElementById("result").innerHTML=params;
+    let xml = fp.HoldPattern(lat,lon,legs,length,loops);
+    document.getElementById("result").innerHTML=xml
 }
