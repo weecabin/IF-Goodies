@@ -1,10 +1,8 @@
 function Hold()
 {
   //window.alert("in Hold");
-  try
-  {
     document.getElementById("debug").innerHTML=" Executing Hold";
-    return;
+    /*
     let latlon=document.getElementById("latlon").value;
     window.alert(latlon);
     let legs=document.getElementById("legs").value;
@@ -14,9 +12,5 @@ function Hold()
     let lon=latlon.split(",")[1];
     let params="lat="+lat+" lon="+lon+" legs="+legs+" length="+length+" loops="+loops);
     document.getElementById("result").innerHTML=params;
-  }
-  catch(err) 
-  {
-    document.getElementById("result").innerHTML = err.message;
-  }
+ */
 }
