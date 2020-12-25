@@ -14,7 +14,8 @@ function Hold()
     document.getElementById("params").innerHTML=params;
     //let xml = HoldPattern(Number(legs),Number(length),Number(lat),Number(lon),Number(loops));
     let x = new Node("root","value");
-    document.getElementById("result").innerHTML="End of Hold()"
+    x.AddChild(new Node("child","value"))
+    document.getElementById("result").innerHTML="End of Hold()"+x.ToXML();
 }
 
 class Node
