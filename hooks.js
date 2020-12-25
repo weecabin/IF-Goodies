@@ -122,17 +122,6 @@ class Node
   }
 }
 
-const Node = myxml.Node;
-
-var printHold = ""
-const print = (msg) => {
-  printHold+=msg;
-}
-const println = (msg) => {
-  console.log(printHold+msg);
-  printHold="";
-}
-
 class FlightPlan
 {
   constructor(name)
