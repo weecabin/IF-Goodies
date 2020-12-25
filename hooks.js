@@ -85,6 +85,7 @@ class Node
   // returns a string representing the data below this Node
   ToXML()
   {
+    return " something, anything";
     //println("building "+this.Name)
     var ret = this.Version;
     ret += this.BuildElement();
