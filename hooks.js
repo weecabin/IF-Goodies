@@ -1,22 +1,4 @@
 
-function Hold()
-{
-  //window.alert("in Hold");
-    document.getElementById("debug").innerHTML=" Executing Hold";
-    let latlon=document.getElementById("latlon").value;
-    //window.alert(latlon);
-    let legs=document.getElementById("legs").value;
-    let length=document.getElementById("length").value;
-    let loops=document.getElementById("loops").value;
-    let lat=latlon.split(",")[0];
-    let lon=latlon.split(",")[1];
-    let params="lat="+lat+" lon="+lon+" legs="+legs+" length="+length+" loops="+loops;
-    document.getElementById("params").innerHTML=params;
-    //let xml = HoldPattern(Number(legs),Number(length),Number(lat),Number(lon),Number(loops));
-    let x = new Node("root","value");
-    x.AddChild(new Node("child","value"))
-    document.getElementById("result").innerHTML="End of Hold()"+x.ToXML();
-}
 
 class Node
 {
@@ -85,7 +67,6 @@ class Node
   // returns a string representing the data below this Node
   ToXML()
   {
-    return " something, anything";
     //println("building "+this.Name)
     var ret = this.Version;
     ret += this.BuildElement();
@@ -114,4 +95,23 @@ class Node
       el += "\n";
     return el;
   }
+}
+
+function Hold()
+{
+  //window.alert("in Hold");
+    document.getElementById("debug").innerHTML=" Executing Hold";
+    let latlon=document.getElementById("latlon").value;
+    //window.alert(latlon);
+    let legs=document.getElementById("legs").value;
+    let length=document.getElementById("length").value;
+    let loops=document.getElementById("loops").value;
+    let lat=latlon.split(",")[0];
+    let lon=latlon.split(",")[1];
+    let params="lat="+lat+" lon="+lon+" legs="+legs+" length="+length+" loops="+loops;
+    document.getElementById("params").innerHTML=params;
+    //let xml = HoldPattern(Number(legs),Number(length),Number(lat),Number(lon),Number(loops));
+    let x = new Node("root","value");
+    x.AddChild(new Node("child","value"))
+    document.getElementById("result").innerHTML="End of Hold()"+x.ToXML();
 }
