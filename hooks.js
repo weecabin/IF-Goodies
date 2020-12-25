@@ -13,7 +13,8 @@ function Hold()
     let params="lat="+lat+" lon="+lon+" legs="+legs+" length="+length+" loops="+loops;
     document.getElementById("params").innerHTML=params;
     //let xml = HoldPattern(Number(legs),Number(length),Number(lat),Number(lon),Number(loops));
-    document.getElementById("result").innerHTML=(new Node("test")).ToXML();
+    let x = new Node("root","value");
+    document.getElementById("result").innerHTML=x.ToXML();
 }
 
 var printHold = ""
