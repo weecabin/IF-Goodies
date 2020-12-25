@@ -13,7 +13,7 @@ function Hold()
     let params="lat="+lat+" lon="+lon+" legs="+legs+" length="+length+" loops="+loops;
     document.getElementById("params").innerHTML=params;
     //let xml = HoldPattern(Number(legs),Number(length),Number(lat),Number(lon),Number(loops));
-    //let x = new Node("root","value");
+    let x = new Node("root","value");
     document.getElementById("result").innerHTML="End of Hold()"
 }
 
